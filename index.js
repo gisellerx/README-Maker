@@ -37,22 +37,22 @@ const questions = [
         name: "Table of Contents"
     },
     {
-        type: "editor",
+        type: "input",
         message: "Enter installation instructions:",
         name: "installation"
     },
     {
-        type: "editor",
+        type: "input",
         message: "Enter usage information:",
         name: "usage"
     },
     {
-        type: "editor",
+        type: "input",
         message: "Enter contribution guidelines:",
-        name: "How to Contribute:",
+        name: "contribute:",
     },
     {
-        type: "editor",
+        type: "input",
         message: "Enter test instructions:",
         name: "test"
     },
@@ -60,14 +60,7 @@ const questions = [
         type: "list",
         message: "Choose a license for your project:",
         name: "license",
-        choices: [
-            "Apache License 2.0",
-            "Boost Software License 1.0",
-            "GNU General Public License v3.0",
-            "MIT License",
-            "Mozilla Public License 2.0",
-            "No license"
-        ] 
+        choices:["MIT", "IBM","Apache", "No License"],
     },
     {
         type: "input",
