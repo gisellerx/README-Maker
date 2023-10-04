@@ -33,6 +33,11 @@ const questions = [
     },
     {
         type: "editor",
+        message: "Enter Table of Contents:",
+        name: "Table of Contents"
+    },
+    {
+        type: "editor",
         message: "Enter installation instructions:",
         name: "installation"
     },
@@ -44,7 +49,7 @@ const questions = [
     {
         type: "editor",
         message: "Enter contribution guidelines:",
-        name: "how-to-contribute"
+        name: "How to Contribute:",
     },
     {
         type: "editor",
@@ -52,7 +57,27 @@ const questions = [
         name: "test"
     },
     {
-        
+        type: "list",
+        message: "Choose a license for your project:",
+        name: "license",
+        choices: [
+            "Apache License 2.0",
+            "Boost Software License 1.0",
+            "GNU General Public License v3.0",
+            "MIT License",
+            "Mozilla Public License 2.0",
+            "No license"
+        ] 
+    },
+    {
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "username"
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "email"
     }
 ];
 
