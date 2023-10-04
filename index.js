@@ -1,4 +1,7 @@
 // TODO: Include packages needed for this application
+const generateMarkdown = require("./utils/generateMarkdown.js");
+const inquirer = require("inquirer");
+const fs = require("fs");
 
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
@@ -17,7 +20,41 @@
 // THEN I am taken to the corresponding section of the README
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    {
+        type: "input",
+        message: "What is the title of your project?",
+        name: "title"
+    },
+    {
+        type: "editor",
+        message: "Enter a description of your project:",
+        name: "description"
+    },
+    {
+        type: "editor",
+        message: "Enter installation instructions:",
+        name: "installation"
+    },
+    {
+        type: "editor",
+        message: "Enter usage information:",
+        name: "usage"
+    },
+    {
+        type: "editor",
+        message: "Enter contribution guidelines:",
+        name: "how-to-contribute"
+    },
+    {
+        type: "editor",
+        message: "Enter test instructions:",
+        name: "test"
+    },
+    {
+        
+    }
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
