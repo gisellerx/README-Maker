@@ -49,6 +49,12 @@ ${data.contribution}
 
 ${data.test}
 
+## Questions
+<ul>
+  <li> <a href="https://github.com/${data.username}">Github Profile</a> </li>
+  <li> <a href="mailto:${data.email}">Email Me</a> </li>
+</ul>
+
 `;
 }
 
