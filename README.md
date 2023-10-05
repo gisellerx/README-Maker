@@ -35,6 +35,8 @@ N/A
 
 ## Usage
 
+Here is a walkthrough video link: https://drive.google.com/file/d/1QfZJLKRkuvFTR-GxRB9VKpuQNrO7YHHO/view 
+
 ![](https://github.com/gisellerx/gifhub/blob/main/README%20MAKER%20GIF.gif?raw=true)
 
 ## Credits
