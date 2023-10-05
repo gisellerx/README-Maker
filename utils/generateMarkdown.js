@@ -19,7 +19,7 @@ function renderLicenseBadge(license) {
 // Creates a function that returns the license link
 function renderLicenseLink(license) {
   if (license==="MIT") {
-    return `https://opensource.org/licenses/MIT`
+    return ``
   }
   else if (license==="No License") {
     return `http://unlicense.org/`
@@ -35,13 +35,19 @@ function renderLicenseLink(license) {
 // Create a function that returns the license section of README
 function renderLicenseSection(license) {
   if (license==="MIT") {
-    return `THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
+    return `https://opensource.org/licenses/MIT 
+
+    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
   }
   else if (license==="No License") {
-    return `No license.`
+    return `http://unlicense.org/ 
+    
+    No license.`
   }
   else if (license==="Apache") {
-    return `Copyright [yyyy] [name of copyright owner]
+    return `https://opensource.org/licenses/Apache-2.0
+    
+    Copyright [yyyy] [name of copyright owner]
 
     Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 
@@ -55,13 +61,15 @@ function renderLicenseSection(license) {
     limitations under the License.`
   }
   else if (license==="IBM") {
-    return `Copyright [yyyy] [name of copyright owner]
+    return `https://opensource.org/licenses/IPL-1.0
+    
+    Copyright [yyyy] [name of copyright owner]
 
     Licensed under the IBM License, You may not use this file except in compliance with the License.`
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// CreateS a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -71,9 +79,7 @@ function generateMarkdown(data) {
 
   ${data.description}
 
-  ## Table of Contents (Optional)
-
-  If your README is long, add a table of contents to make it easy for users to find what they need.
+  ## Table of Contents
 
   - [Installation](#installation)
   - [Usage](#usage)
@@ -96,7 +102,7 @@ function generateMarkdown(data) {
 
   ## Contribute
 
-  ${data.contribution}
+  ${data.contribute}
 
   ## Tests
 
